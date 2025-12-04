@@ -16,7 +16,7 @@ static const char *TEST_INPUT =
 static const int TEST_EXPECT_PART1 = 3;
 static const int TEST_EXPECT_PART2 = 6;
 
-#define INPUT_FILE "input"
+#define INPUT_FILE "input/1"
 
 int part1(FILE *fp) {
     int dial_position = 50;
@@ -117,16 +117,14 @@ int main(void) {
     int test1 = run_test_part1();
     printf("Test 1 result: %d\n", test1);
     if (test1 != TEST_EXPECT_PART1) {
-        printf("Part 1 test failed: got %d, expected %d\n",
-               test1, TEST_EXPECT_PART1);
+        printf("Part 1 test failed: got %d, expected %d\n", test1, TEST_EXPECT_PART1);
         return 1;
     }
 
     int test2 = run_test_part2();
     printf("Test 2 result: %d\n", test2);
     if (test2 != TEST_EXPECT_PART2) {
-        printf("Part 2 test failed: got %d, expected %d\n",
-               test2, TEST_EXPECT_PART2);
+        printf("Part 2 test failed: got %d, expected %d\n", test2, TEST_EXPECT_PART2);
         return 1;
     }
 
